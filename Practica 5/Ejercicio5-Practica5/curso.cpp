@@ -14,6 +14,6 @@ void Curso::agregarAlumno(Alumno a)
 void Curso::mostrarAlumnos()
 {
     for (int i=0;i<this->nroAlumnosCargados;i++) {
-        cout<<this->alumnos[i].getNombre()<<" "<<this->alumnos[i].promedio()<<endl;
+        cout<<this->alumnos[i].getNombre()<<", Promedio: "<<this->alumnos[i].promedio()<<endl;
     }
 }
