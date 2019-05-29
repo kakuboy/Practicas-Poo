@@ -26,14 +26,20 @@ int main()
     mariano->setNombre("Mariano");
     mariano->setApellido("Udin");
     mariano->setNotaFinal(80);
+    AlumnoLibre *flor = new AlumnoLibre(404040402);
+    flor->setPregunta(0);
+    flor->setNombre("Florencia");
+    flor->setApellido("Rios");
+    flor->setNotaFinal(70);
 
 
     unCurso->agregarAlumno(juan);
     unCurso->agregarAlumno(pedro);
     unCurso->agregarAlumno(mariano);
-
+    unCurso->agregarAlumno(flor);
 
     unCurso->mostrarCondiciones();
+    unCurso->mostrarMails();
 
 
     return 0;

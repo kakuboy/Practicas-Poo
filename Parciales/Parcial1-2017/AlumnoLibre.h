@@ -5,8 +5,15 @@
 
 class AlumnoLibre:public Alumno
 {
+private:
+    bool pregunta = true;
 public:
-    AlumnoLibre();
+    AlumnoLibre(int dni):Alumno(dni){}
+
+    void setPregunta(bool a);
+    void setNombre(char *a);
+    void setApellido(char *a);
+    void setNotaFinal(int nFinal);
 
     bool aprueba();
     bool preguntas();

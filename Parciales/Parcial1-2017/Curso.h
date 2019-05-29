@@ -1,6 +1,7 @@
 #ifndef CURSO_H
 #define CURSO_H
 #include "Alumno.h"
+#include <cstring>
 #include <iostream>
 
 using namespace std;
