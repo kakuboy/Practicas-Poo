@@ -15,6 +15,8 @@ public:
     }
     Alumno(){}
 
+    char *getNombre();
+    char *getApellido();
 
     virtual ~Alumno()=0;
     virtual bool aprueba()=0;

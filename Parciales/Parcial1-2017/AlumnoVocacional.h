@@ -6,7 +6,13 @@
 class AlumnoVocacional:public Alumno
 {
 public:
-    AlumnoVocacional();
+    AlumnoVocacional(int dni):Alumno(dni){
+
+    }
+
+    void setNombre(char *nombre);
+    void setApellido(char *ape);
+    void setNotaFinal(int nFinal);
 
     bool aprueba();
 };
