@@ -17,16 +17,19 @@ int main()
     juan->setApellido("Iudica");
     juan->setNotas(60,60,60);
     juan->setNotaFinal(70);
+
     AlumnoNormal *pedro = new AlumnoNormal(7373733);
     pedro->setNombre("Pedro");
     pedro->setApellido("Garcia");
     pedro->setNotas(20,40,30);
     pedro->setNotaFinal(50);
+
     AlumnoVocacional *mariano = new AlumnoVocacional(40404033);
     mariano->setNombre("Mariano");
     mariano->setApellido("Udin");
     mariano->setNotaFinal(80);
     AlumnoLibre *flor = new AlumnoLibre(404040402);
+
     flor->setPregunta(0);
     flor->setNombre("Florencia");
     flor->setApellido("Rios");

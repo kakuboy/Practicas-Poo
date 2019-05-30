@@ -5,6 +5,7 @@ CONFIG -= qt
 
 SOURCES += \
         Alumno.cpp \
+        AlumnoEspecial.cpp \
         AlumnoLibre.cpp \
         AlumnoNormal.cpp \
         AlumnoVocacional.cpp \
@@ -13,6 +14,7 @@ SOURCES += \
 
 HEADERS += \
     Alumno.h \
+    AlumnoEspecial.h \
     AlumnoLibre.h \
     AlumnoNormal.h \
     AlumnoVocacional.h \
