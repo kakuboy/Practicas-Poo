@@ -56,5 +56,6 @@ int main()
     martin.mostrarNotas();
     martin.eliminarNota(3);
     martin.mostrarNotas();
+
     return 0;
 }
