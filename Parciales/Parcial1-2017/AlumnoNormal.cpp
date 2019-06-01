@@ -30,7 +30,7 @@ char *AlumnoNormal::getNombre()
 
 double AlumnoNormal::calcularPromedios()
 {
-    double promedio=0;
+    double promedio=0.0;
 
     return promedio = (notas1+notas2+notas3)/3;
 }

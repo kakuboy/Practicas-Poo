@@ -4,6 +4,7 @@
 #include "AlumnoNormal.h"
 #include "AlumnoLibre.h"
 #include "AlumnoVocacional.h"
+#include "AlumnoEspecial.h"
 
 
 using namespace std;
@@ -28,8 +29,8 @@ int main()
     mariano->setNombre("Mariano");
     mariano->setApellido("Udin");
     mariano->setNotaFinal(80);
-    AlumnoLibre *flor = new AlumnoLibre(404040402);
 
+    AlumnoLibre *flor = new AlumnoLibre(404040402);
     flor->setPregunta(0);
     flor->setNombre("Florencia");
     flor->setApellido("Rios");
@@ -44,6 +45,16 @@ int main()
     unCurso->mostrarCondiciones();
     unCurso->mostrarMails();
 
+    cout<<"---------------------------------------------"<<endl;
 
+    AlumnoEspecial martin;
+    martin.agregarNotas(60);
+    martin.agregarNotas(70);
+    martin.agregarNotas(70);
+    martin.agregarNotas(50);
+
+    martin.mostrarNotas();
+    martin.eliminarNota(3);
+    martin.mostrarNotas();
     return 0;
 }

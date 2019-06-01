@@ -53,12 +53,14 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../Parcial1-2017/Alumno.cpp \
+		../Parcial1-2017/AlumnoEspecial.cpp \
 		../Parcial1-2017/AlumnoLibre.cpp \
 		../Parcial1-2017/AlumnoNormal.cpp \
 		../Parcial1-2017/AlumnoVocacional.cpp \
 		../Parcial1-2017/Curso.cpp \
 		../Parcial1-2017/main.cpp 
 OBJECTS       = Alumno.o \
+		AlumnoEspecial.o \
 		AlumnoLibre.o \
 		AlumnoNormal.o \
 		AlumnoVocacional.o \
@@ -247,6 +249,7 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/qt_config.prf \
 		/usr/lib/qt/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/qt/mkspecs/features/spec_post.prf \
+		../Parcial1-2017/.qmake.stash \
 		/usr/lib/qt/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/qt/mkspecs/features/toolchain.prf \
 		/usr/lib/qt/mkspecs/features/default_pre.prf \
@@ -261,10 +264,12 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/yacc.prf \
 		/usr/lib/qt/mkspecs/features/lex.prf \
 		../Parcial1-2017/Parcial1-2017.pro Alumno.h \
+		AlumnoEspecial.h \
 		AlumnoLibre.h \
 		AlumnoNormal.h \
 		AlumnoVocacional.h \
 		Curso.h ../Parcial1-2017/Alumno.cpp \
+		../Parcial1-2017/AlumnoEspecial.cpp \
 		../Parcial1-2017/AlumnoLibre.cpp \
 		../Parcial1-2017/AlumnoNormal.cpp \
 		../Parcial1-2017/AlumnoVocacional.cpp \
@@ -464,6 +469,7 @@ Makefile: ../Parcial1-2017/Parcial1-2017.pro /usr/lib/qt/mkspecs/linux-g++/qmake
 		/usr/lib/qt/mkspecs/features/qt_config.prf \
 		/usr/lib/qt/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/qt/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/lib/qt/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/qt/mkspecs/features/toolchain.prf \
 		/usr/lib/qt/mkspecs/features/default_pre.prf \
@@ -662,6 +668,7 @@ Makefile: ../Parcial1-2017/Parcial1-2017.pro /usr/lib/qt/mkspecs/linux-g++/qmake
 /usr/lib/qt/mkspecs/features/qt_config.prf:
 /usr/lib/qt/mkspecs/linux-g++/qmake.conf:
 /usr/lib/qt/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /usr/lib/qt/mkspecs/features/exclusive_builds.prf:
 /usr/lib/qt/mkspecs/features/toolchain.prf:
 /usr/lib/qt/mkspecs/features/default_pre.prf:
@@ -722,6 +729,9 @@ compiler_clean:
 Alumno.o: ../Parcial1-2017/Alumno.cpp ../Parcial1-2017/Alumno.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Alumno.o ../Parcial1-2017/Alumno.cpp
 
+AlumnoEspecial.o: ../Parcial1-2017/AlumnoEspecial.cpp ../Parcial1-2017/AlumnoEspecial.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AlumnoEspecial.o ../Parcial1-2017/AlumnoEspecial.cpp
+
 AlumnoLibre.o: ../Parcial1-2017/AlumnoLibre.cpp ../Parcial1-2017/AlumnoLibre.h \
 		../Parcial1-2017/Alumno.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AlumnoLibre.o ../Parcial1-2017/AlumnoLibre.cpp
@@ -742,7 +752,8 @@ main.o: ../Parcial1-2017/main.cpp ../Parcial1-2017/Alumno.h \
 		../Parcial1-2017/Curso.h \
 		../Parcial1-2017/AlumnoNormal.h \
 		../Parcial1-2017/AlumnoLibre.h \
-		../Parcial1-2017/AlumnoVocacional.h
+		../Parcial1-2017/AlumnoVocacional.h \
+		../Parcial1-2017/AlumnoEspecial.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Parcial1-2017/main.cpp
 
 ####### Install
