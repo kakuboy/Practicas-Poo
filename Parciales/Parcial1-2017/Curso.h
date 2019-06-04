@@ -9,7 +9,7 @@ using namespace std;
 
 class Curso
 {
-private:
+public:
     Alumno *alumnos[30];
     char *nombre;
     int cantAlumnos;
@@ -23,10 +23,10 @@ public:
     void agregarAlumno(Alumno *a);
 
     //No estoy seguro de que anda
-    friend ostream& operator << (ostream& o, Alumno& a){
-        o<<a.getNombre()<<" "<<a.getApellido()<<endl;
-        return o;
-    }
+ //   friend ostream& operator << (ostream& o, Alumno* a){
+   //     o<<a->getNombre()<<" "<<a->getApellido()<<endl;
+     //   return o;
+   // }
 };
 
 #endif // CURSO_H

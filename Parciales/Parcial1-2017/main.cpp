@@ -9,6 +9,11 @@
 
 using namespace std;
 
+ostream& operator << (ostream& o, Alumno* a){
+    o<<a->getNombre()<<" "<<a->getApellido()<<endl;
+    return o;
+}
+
 int main()
 {
     Curso *unCurso = new Curso("POO");
@@ -46,6 +51,8 @@ int main()
     unCurso->mostrarMails();
 
     cout<<"---------------------------------------------"<<endl;
+     for (int i=0;i<unCurso->cantAlumnos;i++)
+         cout << unCurso->alumnos[i] << endl;
 
     AlumnoEspecial martin;
     martin.agregarNotas(60);
