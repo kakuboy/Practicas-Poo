@@ -20,13 +20,9 @@ char *strlwr(char *str)
 void Curso::mostrarCondiciones()
 {
     for (int i=0;i<this->cantAlumnos;i++) {
-        if(this->alumnos[i]->aprueba()){
-            cout<<this->alumnos[i]->getNombre()<<" "<<this->alumnos[i]->getApellido()<<" "<<this->alumnos[i]->aprueba()<<endl;
-        }
-        else {
-            cout<<this->alumnos[i]->getNombre()<<" "<<this->alumnos[i]->getApellido()<<" "<<this->alumnos[i]->aprueba()<<endl;
-        }
-    }
+
+        cout<<this->alumnos[i]->getNombre()<<" "<<this->alumnos[i]->getApellido()<<" "<<this->alumnos[i]->aprueba()<<endl;
+}
 }
 
 void Curso::mostrarMails()

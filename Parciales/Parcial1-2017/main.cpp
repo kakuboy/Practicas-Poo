@@ -54,7 +54,9 @@ int main()
      for (int i=0;i<unCurso->cantAlumnos;i++)
          cout << unCurso->alumnos[i] << endl;
 
-    AlumnoEspecial martin;
+    cout<<"---------------------------------------------"<<endl;
+
+    AlumnoEspecial martin(4);
     martin.agregarNotas(60);
     martin.agregarNotas(70);
     martin.agregarNotas(70);

@@ -9,10 +9,17 @@ class AlumnoEspecial
 {
 private:
     int *notas;
-    int cant = 0;
+    int size;
+    int cant;
 public:
     AlumnoEspecial(){
-        this->notas = new int[cant];
+        cant = 0;
+        size = 0;
+    }
+    AlumnoEspecial(int n){
+        cant = 0;
+        notas = new int[n];
+        size = n;
     }
     ~AlumnoEspecial(){
         delete [] notas;

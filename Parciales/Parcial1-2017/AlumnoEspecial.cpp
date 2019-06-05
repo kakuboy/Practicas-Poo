@@ -3,7 +3,20 @@
 
 void AlumnoEspecial::agregarNotas(int nota)
 {
-    notas[cant++] = nota;
+    //notas[cant++] = nota;
+
+    int *notasAux = new int[cant+1];
+
+    for (int i=0;i<cant;i++) {
+        notasAux[i] = notas[i];
+    }
+
+    notasAux[cant] = nota;
+    delete []notas;
+    notas=notasAux;
+    cant++;
+    size++;
+
 }
 
 void AlumnoEspecial::eliminarNota(int notaAEliminar)
