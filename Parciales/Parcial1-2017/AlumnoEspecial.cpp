@@ -1,6 +1,5 @@
 #include "AlumnoEspecial.h"
 
-
 void AlumnoEspecial::agregarNotas(int nota)
 {
     //notas[cant++] = nota;
@@ -15,7 +14,7 @@ void AlumnoEspecial::agregarNotas(int nota)
     delete []notas;
     notas=notasAux;
     cant++;
-    size++;
+    //size++;
 
 }
 

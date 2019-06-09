@@ -9,13 +9,14 @@
 
 using namespace std;
 
-ostream& operator << (ostream& o, Alumno* a){
+/*ostream& operator << (ostream& o, Alumno* a){
     o<<a->getNombre()<<" "<<a->getApellido()<<endl;
     return o;
-}
+}*/
 
 int main()
 {
+
     Curso *unCurso = new Curso("POO");
 
     AlumnoNormal *juan = new AlumnoNormal(40404040);
@@ -41,7 +42,6 @@ int main()
     flor->setApellido("Rios");
     flor->setNotaFinal(70);
 
-
     unCurso->agregarAlumno(juan);
     unCurso->agregarAlumno(pedro);
     unCurso->agregarAlumno(mariano);
@@ -56,9 +56,11 @@ int main()
 
     cout<<"---------------------------------------------"<<endl;
 
-    AlumnoEspecial martin(4);
+    AlumnoEspecial martin;
     martin.agregarNotas(60);
     martin.agregarNotas(70);
+    martin.agregarNotas(70);
+    martin.agregarNotas(50);
     martin.agregarNotas(70);
     martin.agregarNotas(50);
 

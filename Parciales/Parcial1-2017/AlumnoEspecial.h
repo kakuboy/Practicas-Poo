@@ -4,22 +4,22 @@
 
 using namespace std;
 
-
 class AlumnoEspecial
 {
 private:
     int *notas;
-    int size;
+   // int size;
     int cant;
 public:
     AlumnoEspecial(){
         cant = 0;
-        size = 0;
+        notas = new int[5];
+        //size = 5;
     }
     AlumnoEspecial(int n){
         cant = 0;
         notas = new int[n];
-        size = n;
+       // size = n;
     }
     ~AlumnoEspecial(){
         delete [] notas;

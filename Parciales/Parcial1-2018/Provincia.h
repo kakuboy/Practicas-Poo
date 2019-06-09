@@ -8,8 +8,20 @@ using namespace std;
 
 class Provincia
 {
+    Departamento *departamentos[50];
+    int cant;
+    char *nombre;
 public:
-    Provincia();
+    Provincia(char *nombre){
+        this->nombre = new char[strlen(nombre)];
+        strcpy(this->nombre,nombre);
+    }
+    Provincia(){}
+
+    int calcularHabitantes();
+    void agregar(Departamento* a);
+    void mostrar();
+
 };
 
 #endif // PROVINCIA_H

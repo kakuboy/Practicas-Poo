@@ -10,10 +10,6 @@ public:
 
     }
 
-    void setNombre(char *nombre);
-    void setApellido(char *ape);
-    void setNotaFinal(int nFinal);
-
     bool aprueba();
 };
 
