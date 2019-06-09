@@ -18,6 +18,7 @@ public:
     }
     Provincia(){}
 
+    char *getNombreProvincia();
     int calcularHabitantes();
     void agregar(Departamento* a);
     void mostrar();

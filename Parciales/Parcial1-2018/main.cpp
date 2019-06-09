@@ -54,5 +54,11 @@ int main()
 
     unaProvincia->mostrar();
 
+    Pais *unPais = new Pais("Argentina");
+
+    unPais->agregar(unaProvincia);
+
+    unPais->mostrarDatos();
+
     return 0;
 }

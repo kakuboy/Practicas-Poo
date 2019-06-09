@@ -1,5 +1,10 @@
 #include "Provincia.h"
 
+char *Provincia::getNombreProvincia()
+{
+    return this->nombre;
+}
+
 int Provincia::calcularHabitantes()
 {
     int total = 0;

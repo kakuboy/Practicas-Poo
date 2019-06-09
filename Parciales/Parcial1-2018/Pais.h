@@ -9,10 +9,16 @@ using namespace std;
 class Pais
 {
     Provincia *provincias[23];
+    int cant;
+    char *nombre;
 public:
-    Pais();
+    Pais(char *nombre){
+        this->nombre = new char[strlen(nombre)];
+        strcpy(this->nombre,nombre);
+    }
 
     int calcularHabitantes();
+    void agregar(Provincia *a);
     void mostrarDatos();
 };
 
