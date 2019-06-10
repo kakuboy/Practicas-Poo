@@ -47,6 +47,13 @@ int main()
     cout<<endl;
     unDepartamento2->mostrar();
 
+    cout<<"------------------------------------------------------"<<endl;
+    cout<<"Ciudad con las 3 primeras letras en mayuscula."<<endl;
+    cout<<"Ciudad: "<<unaCiudad<<endl;
+    cout<<"Ciudad: "<<unaCiudad2<<endl;
+    cout<<"Ciudad: "<<unaCiudad3<<endl;
+    cout<<"------------------------------------------------------"<<endl;
+
     Provincia *unaProvincia = new Provincia("Entre Rios");
 
     unaProvincia->agregar(unDepartamento);

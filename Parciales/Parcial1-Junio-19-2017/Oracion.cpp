@@ -19,6 +19,11 @@ int Oracion::getCantLetras()
     return cantL;
 }
 
+char **Oracion::getVector()
+{
+    return vector;
+}
+
 void Oracion::agregarPalabra(char *a)
 {
     char **vecAux;
